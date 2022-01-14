@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  background-color: #111;
+  height: 100vh;
+  overflow: hidden;
+}
+.snow {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #fff;
+  animation: transformSnow 5s infinite linear;
+}
+@keyframes transformSnow {
+  0% {
+    transform: translateY(0px);
+  }
+  40% {
+    transform: translateY(40px);
+  }
+  80% {
+    transform: translateY(80px);
+  }
+  to {
+    transform: translateY(100px);
+  }
+}
+.wrap {
+  padding: 20px;
+  border-top-right-radius: 13px;
+  border-bottom-left-radius: 13px;
+  border: 2px solid darkcyan;
+  user-select: none;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: red;
+  text-align: center;
+  font-size: 3.5rem;
+  text-shadow: 0px 2px 3px #fff;
+  animation: animText 4s infinite linear;
+}
+@keyframes animText {
+  20% {
+    color: green;
+  }
+  50% {
+    color: orange;
+  }
+  80% {
+    color: orchid;
+  }
+  to {
+    color: orange;
+  }
+}
